@@ -2,15 +2,15 @@ import Race from './Race';
 
 class Elf extends Race {
   private maxHelth: number;
-  static ElfCountInstances = 0;
+  static elfCountInstances = 0;
   constructor(name: string, dexterity: number) {
     super(name, dexterity);
     this.maxHelth = 99;
-    Elf.ElfCountInstances += 1;
+    Elf.elfCountInstances += 1;
   }
   
   static createdRacesInstances(): number {
-    return Elf.ElfCountInstances;
+    return Elf.elfCountInstances;
   }
 
   get maxLifePoints(): number {

@@ -3,7 +3,7 @@ import Archetype from './Archetype';
 
 export default class Warrior extends Archetype {
   private _mana: EnergyType;
-  static warriorCountInstances = 0;
+  private static warriorCountInstances = 0;
   constructor(name: string) {
     super(name);
     Warrior.warriorCountInstances += 1;

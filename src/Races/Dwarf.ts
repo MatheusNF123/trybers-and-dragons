@@ -2,7 +2,7 @@ import Race from './Race';
 
 class Dwarf extends Race {
   private maxHelth: number;
-  static dwarfCountInstances = 0;
+  private static dwarfCountInstances = 0;
   constructor(name: string, dexterity: number) {
     super(name, dexterity);
     this.maxHelth = 80;

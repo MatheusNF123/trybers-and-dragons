@@ -10,6 +10,12 @@ const player3 = new Character('Alguem');
 player1.levelUp();
 player1.levelUp();
 player1.levelUp();
+player1.levelUp();
+player1.levelUp();
+player1.levelUp();
+player1.levelUp();
+player1.levelUp();
+player1.levelUp();
 
 const monster1 = new Monster();
 const monster2 = new Dragon();
@@ -24,12 +30,4 @@ function runBattles(play: Battle[]):void {
   });
 }
 
-export { player1, player2, player3 };
-
-export { monster1, monster2 };
-
-export { pvp };
-
-export { pve };
-
-export { runBattles };
+export { player1, player2, player3, monster1, monster2, pvp, pve, runBattles };

@@ -3,7 +3,7 @@ import Archetype from './Archetype';
 
 export default class Mage extends Archetype {
   private _mana: EnergyType;
-  static mageCountInstances = 0;
+  private static mageCountInstances = 0;
   constructor(name: string) {
     super(name);
     Mage.mageCountInstances += 1;

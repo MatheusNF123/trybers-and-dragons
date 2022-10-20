@@ -2,7 +2,7 @@ import Race from './Race';
 
 class Halfling extends Race {
   private maxHelth: number;
-  static halflingCountInstances = 0;
+  private static halflingCountInstances = 0;
   constructor(name: string, dexterity: number) {
     super(name, dexterity);
     this.maxHelth = 60;

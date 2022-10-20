@@ -1,10 +1,10 @@
 import Fighter, { SimpleFighter } from '../Fighter';
-// import Monster from '../Monster';
+
 import Battle from './Battle';
 
 export default class PVE extends Battle {
   private _player: Fighter;
-  private _monster: Fighter[] | SimpleFighter [];
+  private _monster: Array<Fighter | SimpleFighter>;
   constructor(player: Fighter, monster: Array<Fighter | SimpleFighter>) {
     super(player);
     this._player = player;
@@ -16,8 +16,12 @@ export default class PVE extends Battle {
       while (this._player.lifePoints > 0 && monster.lifePoints > 0) {
         this._player.attack(monster);
         monster.attack(this._player);
+        console.log('player', this._player.lifePoints);
+        console.log('monster', monster.lifePoints);
       }
     });
+    console.log('acabou');
+    
     return super.fight();
   }
 }
